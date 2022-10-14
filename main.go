@@ -77,9 +77,6 @@ func genPrimes(A, B int) []int {
 		A++
 	}
 	for i := A; i <= B; i += 2 {
-		if i == 0 || i == 1 {
-			continue
-		}
 		isPrime := true
 		for j := 2; j*j <= i; j++ {
 			if i%j == 0 {
